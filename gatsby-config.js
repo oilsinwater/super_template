@@ -12,14 +12,14 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-image`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-source-ghost`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
+        apiUrl: `http://localhost:2368`,
+        contentApiKey: `a1f711a1b59ad810266ad72e2b`,
+      }
     },
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
