@@ -93,6 +93,10 @@ hr {
   border: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Heading */
 
 h1,
@@ -318,6 +322,7 @@ a:focus {
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
 }
+
 
 /* Media queries */
 
