@@ -16,7 +16,7 @@ module.exports = {
       resolve: `gatsby-source-ghost`,
       options: {
         apiUrl: `http://localhost:2368`,
-        contentApiKey: `a1f711a1b59ad810266ad72e2b`,
+        contentApiKey: `35956cd4bb41dc4af6242ca0a6`,
       }
     },
     `gatsby-plugin-image`,
