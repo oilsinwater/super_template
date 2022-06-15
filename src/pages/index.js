@@ -72,16 +72,14 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+    allGhostPost(sort: { fields: [published_at], order: DESC }) {
+      edges {
+        node {
+          id
           title
-          description
+          slug
+          excerpt
+          published_at_pretty: published_at(formatString: "DD MMMM, YYYY")
         }
       }
     }
